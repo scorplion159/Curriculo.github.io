@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
  <html lang="pt_br">
      <head>
          <meta charset="UTF-8">
@@ -9,77 +9,120 @@
          <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
          <link href = "https: //fonts.googleapis.com/css2? family = Noto + Serif: ital, wght @ 1.700 & display = swap "rel =" stylesheet ">
              
-             <style>
+            <style>
+                
+                *{
+                    margin: 0;
+                    padding: 0;
+                    border: 0;
+                }
+
+             html{
+                 
+                 width: 100vw;
+                 height: 100vh;
+                 display: flex;
+                 justify-content: center;
+                 background-image:linear-gradient(rgba(238, 238, 238, 0.794),rgba(255, 254, 254, 0.89)) ;
+             }
+             body{width: 100vw;
+                 height: 100vh;
+                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+                 overflow: hidden;
+                 background-color: rgba(233, 232, 232, 0.924);
+                 display: flex;
+                 justify-content: center;
+
+
+             }
              div.titulo{
                 font-family: 'Noto Serif', serif;
                 text-align: center;
+                padding: 0px;
+             }
+
+             #capacitacao{padding-bottom: 10px;
+                 text-align: center;
              }
 
              div.paragrafo{
-                font-family: 'Noto Serif', serif;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
                 text-align: left;
              }
 
-             div.titulolista{
-             font-size: large;
+             .paragrafo{padding-top: 10px;
+                 padding-bottom: 10px;
+                 display: flex;
+                 justify-content: center;
              }
-    
-             th{
-                font-family: 'Noto Serif', serif;
-                text-align: left ;
-                }
-             table{
-                width: 100%;
-                text-align: left;
-                font-size: large;
-                font-weight: 100;
-                display: flex;
-                justify-content: center;
+             .tabela{
+                 font-family: Verdana, Geneva, Tahoma, sans-serif;
+                 display: flex;
+                 justify-content: center;
              }
-             li{
-                font-weight: 100;
+
+             #box{width: 80vw;
+                height: 95vh;
+                background-image: linear-gradient(rgba(104, 104, 104, 0.301),rgb(240, 238, 238));
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+                padding-top: 10px;
              }
-             .paragrafo{display: flex;
-                 justify-content: center;}
+
+             #cursos{padding-bottom: 10px;
+                 padding-top: 10px;
+                 text-align: center;
+             }
+
+             #cursoespecifica{
+                 display: flex;
+                 justify-content: center;
+                 font-family: Verdana, Geneva, Tahoma, sans-serif;
+                 padding-left: 5px;
+             }
 
              
-             </style>
+             
+
+             
+            </style>
 
      </head>
-     <body>
-                  <div class="titulo" ><b><h1> Currículo </h1></b></div><br>
-             <table>
+     <body> 
+        <div id="box">  
+                <div class="titulo" ><b><h1> Currículo </h1></b>
+                     </div><br>
+             
                  <!-- <div class="imagem"><tr><th><img src="eu.jpeg" alt="Tutorial de CSS" title="Logo do CSS" width="250" height="250"></th></div>-->
-                 <div class="paragrafo", id="paragrafo"><p> Leonardo Rodrigues Magalhães<br>
-                 25 anos<br>
-                 Estudante de geografia (bacharelado e licenciatura) <br>
-                 Universidade Federal de Santa Catarina,UFSC<br>
+            <div class="paragrafo", id="paragrafo">
+                 <p> Leonardo Rodrigues Magalhães.<br>
+                 25 anos.<br>
+                 Estudante de geografia (bacharelado e licenciatura). <br>
+                 Universidade Federal de Santa Catarina,UFSC.<br>
                  6ª fase.<br>
                  Email: leodrivematrix@gmail.com<br>
-                 Número de telefone: (48) 996473506</p></div>
-                 <div class="tabela">
-                 <h2>Capacitação:</h2>
-                     <li>Elaboração de mapas e análises temporais utilizando o software QGIS 3.16 e seus plug-ins.  </li>
-                     <li>Identificações e cálculo de áreas de diferentes concentrações e tipos de vegetações.</li> 
-                     <li>Produção de layouts de variação RGB, utilizando as bandas da imagem, gerando chave de interpretação para o mapa.</li>
-                     <li>Produção de layouts para levantar análises temporais entre a evolução da vegetação, da urbanização e  do uso do solo.</li>
-                     <li>Produção de mapas temáticos.</li>
-                     <li>Verificação das áreas de preservação referentes às bacias hidrográficas. </li>
-                     <li>Georeferenciamento de imagens e produção de layouts.</li>
-                 </div>
-            </table>    
+                 Número de telefone: (48) 996473506</p>
+            </div>
 
-            <div class="titulolista">  <h3>Especificações adicionais:</h3> </div><br>
-            <ul>
-                <li>Inglês avançado(capacidade de leitura técnica,escrita e conversação).</li>
-                <li>Conhecimento intermediário do pacote LibreOffice.</li>
-                <li>Conhecimento da linguagem de programação Python + Web.</li>
-                <li>Conhecimento da linguagem de programação Java + Web.</li>
-                <li>Conhecimento básico  em HTML,CSS,JavaScript. </li>
-                <li>Conhecimento básico da utilização do Google Earth.</li>
-                <li>Conhecimento básico em Excel.</li>
-                <li>Facilidade em trabahos de equipe.</li>
+            <div id="capacitacao"><h1>Capacitação:</h1></div>
 
-            </ul>
-        </body>
+            <div class="tabela">
+                     Linguagem de programação Python.<br>
+                     
+                     Linguagem de programação Java/Javascript,HTML,CSS. <br>
+                     
+                     Inglês intermediário(capacidade de leitura técnica,escrita e conversação). <br>
+                      
+                     Conhecimento de algumas IDE's(VSCode, Eclipse, PyCharm).<br>
+                     Conhecimento básico na plataforma de versionamento GitHub.<br>
+                     Facilidade em trabahos de equipe. <br>
+            </div>
+            <div id="cursos"><h1>Cursos:</h1></div>
+            <div id="cursoespecifica">
+                Python - 180 horas - Curso Desenvolvedores de softwares (DEVs) - Nível 1 (Edital 7/2021/PROEX - j) - (Floripa mais empregos + UFSC)<br><br>
+                Java/Javascript,HTML,CSS - 180 horas - Desenvolvedores de softwares (DEVs) - Java - Nível 1 (Proex) - (Floripa mais empregos + UFSC)<br><br>
+                Java/Spring/Angular/SQL/GIT/Kanban - Devinhouse - SENAI - ACATE - 900 horas - (SENAI- ACATE- Senior Sistemas) - Curso em andamento - Cursando o módulo 1(Java) no momento.<br>
+            </div>
+        </div>
+
+     </body>
 </html>
